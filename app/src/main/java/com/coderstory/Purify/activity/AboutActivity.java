@@ -10,7 +10,7 @@ public class AboutActivity extends ToolbarActivity {
 
 
     @Override
-    protected String getToolbarTitle() {
+    protected  String getToolbarTitle() {
         return "关于";
     }
 
