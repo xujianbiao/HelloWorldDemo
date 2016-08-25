@@ -3,12 +3,13 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
-    <string name="about_msg">此应用是基于ADUI适配的Xposed小插件，用于挽救已经迷失自我的MIUI。古人云:浪子回头金不换，希望你改过自新，也不枉费我这辛苦的调教。
+    <string name="about_msg">一款让miui变得清新的小工具，仅此而已。
     \n\n 作者:CoderStory
     \n\n 博客主页 http://blog.coderstory.cn
-    \n\n GitHub主页 https://github.com/coderstory
-    \n\n 新浪微博ID:如此帅气的昵称</string>
-
+        <!-- \n\n GitHub主页 https://github.com/coderstory
+         \n\n 新浪微博ID:如此帅气的昵称-->
+    </string>
+    <string name="version">Version: 1.1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enableBlockADS"><b>启用模块</b>\n去广告功能的总开关</string>
@@ -36,7 +37,7 @@
     <string name="enableSafeCenter"><b>去除安全中心的推广信息</b>\n去除安全中心中显示的推广信息</string>
     <string name="mvadnote"><b>注意事项</b>\n部分应用需要清空应用数据才能去除广告,并且有些广告是可以在应用中直接关闭的，并不需要本插件去修改.</string>
     <string name="music"><b>屏蔽音乐广告</b>\n屏蔽系统自带的音乐APP中的广告内容</string>
-    <string name="version">Version: 1.0</string>
+
     <string name="Tips_Title">温馨提示</string>
     <string name="Btn_Sure">确定</string>
     <string name="Btn_Cancel">取消</string>

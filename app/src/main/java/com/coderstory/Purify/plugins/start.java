@@ -3,15 +3,14 @@ package com.coderstory.Purify.plugins;
 
 import com.coderstory.Purify.module.RemoveAds;
 import com.coderstory.Purify.module.RemoveSearchBar;
-import com.coderstory.Purify.module.ThemePather7;
 import com.coderstory.Purify.module.ThemePather8;
 import com.coderstory.Purify.module.isEnable;
 import com.coderstory.Purify.module.miuiroot;
+
 import de.robv.android.xposed.IXposedHookInitPackageResources;
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.IXposedHookZygoteInit;
 import de.robv.android.xposed.XSharedPreferences;
-import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_InitPackageResources;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
@@ -52,17 +51,17 @@ public class start implements IXposedHookZygoteInit, IXposedHookLoadPackage, IXp
             new RemoveAds().handleLoadPackage(lpparam);
         }
 
-        if (prefs.getBoolean("enableCrackTheme", false)) {
-            XposedBridge.log("开启起主题破解");
-            if (prefs.getBoolean("CreakMIUI7", false)) {
-                XposedBridge.log("开启起miui7主题破解");
-                new ThemePather7().handleLoadPackage(lpparam);
-            }
-
-            if (prefs.getBoolean("CreakMIUI8", false)) {
-                new ThemePather8().handleLoadPackage(lpparam);
-            }
-        }
+//        if (prefs.getBoolean("enableCrackTheme", false)) {
+//            XposedBridge.log("开启起主题破解");
+//            if (prefs.getBoolean("CreakMIUI7", false)) {
+//                XposedBridge.log("开启起miui7主题破解");
+//                new ThemePather7().handleLoadPackage(lpparam);
+//            }
+//
+//            if (prefs.getBoolean("CreakMIUI8", false)) {
+//                new ThemePather8().handleLoadPackage(lpparam);
+//            }
+//        }
     }
 
     @Override

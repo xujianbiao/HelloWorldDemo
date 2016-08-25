@@ -12,15 +12,7 @@
             android:icon="@drawable/blockads"
             android:title="净化广告" />
 
-        <item
-            android:id="@+id/navigation_item_cracktheme"
-            android:icon="@drawable/iconfont_blog"
-            android:title="主题和谐" />
 
-        <item
-            android:id="@+id/navigation_item_Others"
-            android:icon="@drawable/iconfont_home"
-            android:title="其他模块" />
         <item
             android:id="@+id/navigation_item_hosts"
             android:icon="@drawable/hosts"
@@ -52,6 +44,7 @@
                 <item
                     android:id="@+id/navigation_item_checkupdate"
                     android:checkable="true"
+                    android:visible="false"
                     android:icon="@drawable/update"
                     android:title="检测更新" />
 

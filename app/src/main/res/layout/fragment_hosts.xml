@@ -81,6 +81,7 @@
                 android:background="@color/switchBtn"
                 android:paddingEnd="30dp"
                 android:paddingStart="30dp"
+                android:visible="false"
                 android:text="@string/googlehosts" />
 
             <Switch
@@ -91,6 +92,7 @@
                 android:background="@color/switchBtn"
                 android:paddingEnd="30dp"
                 android:paddingStart="30dp"
+                android:visible="false"
                 android:text="@string/youtube" />
 
             <TextView
