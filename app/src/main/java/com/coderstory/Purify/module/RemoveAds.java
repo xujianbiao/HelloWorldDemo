@@ -16,9 +16,7 @@ import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_InitPackageResources;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
-/**
- * Created by Baby Song on 2016/8/17.
- */
+
 
 public class RemoveAds implements IModule {
 

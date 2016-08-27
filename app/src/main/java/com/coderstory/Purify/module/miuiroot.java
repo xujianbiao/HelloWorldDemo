@@ -18,8 +18,8 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 
 public class miuiroot implements IModule {
-    public static TextView WarningText;
-    public static Button accept;
+    private static   TextView WarningText;
+    private static   Button accept;
 
     @Override
     public void handleInitPackageResources(XC_InitPackageResources.InitPackageResourcesParam resparam) {

@@ -53,9 +53,9 @@ public class start implements IXposedHookZygoteInit, IXposedHookLoadPackage, IXp
         }
 
         if (prefs.getBoolean("enableCrackTheme", false)) {
-            XposedBridge.log("开启起主题破解");
+           // XposedBridge.log("开启起主题破解");
             if (prefs.getBoolean("CreakMIUI7", false)) {
-                XposedBridge.log("开启起miui7主题破解");
+              //  XposedBridge.log("开启起miui7主题破解");
                 new ThemePather7().handleLoadPackage(lpparam);
             }
 
@@ -74,5 +74,7 @@ public class start implements IXposedHookZygoteInit, IXposedHookLoadPackage, IXp
         if (prefs.getBoolean("enableCrackTheme", false) && prefs.getBoolean("CreakMIUI8", false)) {
             new ThemePather8().initZygote(startupParam);
         }
+
+
     }
 }
