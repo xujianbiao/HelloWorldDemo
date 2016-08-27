@@ -60,7 +60,7 @@ public class miuiroot implements IModule {
         XposedHelpers.findAndHookMethod("com.miui.permcenter.root.RootApplyActivity", lpparam.classLoader, "onCreate", Bundle.class, new XC_MethodHook() {
             protected void afterHookedMethod(MethodHookParam paramAnonymousMethodHookParam)
                     throws Throwable {
-                // XposedHelpers.setIntField(paramAnonymousMethodHookParam.thisObject, "TK", 5);
+
                 if (miuiroot.accept == null) {
                     return;
                 }

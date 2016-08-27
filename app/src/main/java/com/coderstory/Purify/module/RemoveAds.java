@@ -143,8 +143,11 @@ public class RemoveAds implements IModule {
         if (loadPackageParam.packageName.equals("com.miui.player")) {
             if (prefs.getBoolean("enableMusic", false)) {
                 findAndHookMethod("com.miui.player.util.AdUtils", loadPackageParam.classLoader, "isAdEnable", XC_MethodReplacement.returnConstant(false));
-                findAndHookMethod("com.miui.player.util.AdUtils", loadPackageParam.classLoader, "getPlayAd", XC_MethodReplacement.returnConstant(null));
-                findAndHookMethod("com.miui.player.util.ExperimentsHelper", loadPackageParam.classLoader, "isAdEnable", XC_MethodReplacement.returnConstant(false));
+                findAndHookMethod("com.miui.player.util.AdUtils", loadPackageParam.classLoader, "getPlayAd","esponse.Listener<Result>","Response.ErrorListener", XC_MethodReplacement.returnConstant(null));
+                findAndHookMethod("com.miui.player.util.ExperimentsHelper", loadPackageParam.classLoader, "isAdEnabled", XC_MethodReplacement.returnConstant(false));
+                //findAndHookMethod("com.miui.player.util.Configuration", loadPackageParam.classLoader, "isCmCustomization", XC_MethodReplacement.returnConstant(true));
+                findAndHookMethod("com.miui.player.util.Configuration", loadPackageParam.classLoader, "isCmTest", XC_MethodReplacement.returnConstant(true));
+                findAndHookMethod("com.miui.player.util.Configuration", loadPackageParam.classLoader, "isCpLogoVisiable", XC_MethodReplacement.returnConstant(false));
             }
         }
 
