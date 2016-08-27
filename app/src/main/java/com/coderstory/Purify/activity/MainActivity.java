@@ -22,7 +22,6 @@ import com.coderstory.Purify.fragment.BlockADSFragment;
 import com.coderstory.Purify.fragment.BlogFragment;
 import com.coderstory.Purify.fragment.ChangeSkinFragment;
 import com.coderstory.Purify.fragment.HostsFragment;
-import com.coderstory.Purify.fragment.OthersFragment;
 import com.coderstory.Purify.fragment.SettingsFragment;
 import com.coderstory.Purify.fragment.crackThemeFragment;
 import com.coderstory.Purify.utils.root.SuHelper;
@@ -144,10 +143,7 @@ public class MainActivity extends BaseActivity {
                     mPreMenuItem.setChecked(false);
                 }
                 switch (item.getItemId()) {
-                    case R.id.navigation_item_Others:
-                        mToolbar.setTitle("其他模块");
-                        switchFragment(OthersFragment.class);
-                        break;
+
                     case R.id.navigation_item_blockads:
                         mToolbar.setTitle("净化广告");
                         switchFragment(BlockADSFragment.class);
@@ -179,9 +175,7 @@ public class MainActivity extends BaseActivity {
                         switchFragment(AboutFragment.class);
                         break;
 
-                    case R.id.navigation_item_checkupdate:
-                        SnackBarUtils.makeLong(mNavigationView, "更新功能已禁用！").show();
-                        break;
+
 
                     case R.id.navigation_item_disableapps:
                         mToolbar.setTitle("冻结应用");

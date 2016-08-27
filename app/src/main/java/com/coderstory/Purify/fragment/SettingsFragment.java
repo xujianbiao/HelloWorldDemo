@@ -72,7 +72,6 @@ public class SettingsFragment extends BaseFragment {
 
     @Override
     protected void setUpData() {
-        ((Switch)$(R.id.enableUpdate)).setChecked(getPrefs().getBoolean("enableUpdate",false));
         ((Switch) $(R.id.enableCheck)).setChecked(getPrefs().getBoolean("enableCheck",false));
         ((Switch) $(R.id.gantanhao)).setChecked(getPrefs().getBoolean("gantanhao",false));
         ((Switch) $(R.id.enablemiuiRoot)).setChecked(getPrefs().getBoolean("enablemiuiRoot",false));
