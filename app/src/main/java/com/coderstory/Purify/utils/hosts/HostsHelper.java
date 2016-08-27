@@ -45,6 +45,8 @@ public class HostsHelper extends SuHelper {
             if (HostsConfig.get("enableGoogleHosts").equals("True")) {
                 content = fh.getFromAssets("hosts", mContext);
                 list.add("echo '" + content + "' >> /system/etc/hosts");//谷歌hosts
+                content = fh.getFromAssets("google", mContext);
+                list.add("echo '" + content + "' >> /system/etc/hosts");//谷歌hosts
 
                 content = fh.getFromAssets("hosts_2", mContext);
                 list.add("echo '" + content + "' >> /system/etc/hosts");//谷歌hosts
